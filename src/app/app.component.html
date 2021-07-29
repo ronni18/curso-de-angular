@@ -1,32 +1,11 @@
-<input type="text" [(ngModel)]= "title">
 
-{{title}}
-
-<div *ngIf=" title == 'roni'"> 
-
-  esto es un div
-</div>
-<br> 
-<br>
-<button (click)="addItems()">add intem</button>
-
-<ul>
-  <li  *ngIf="items.length == 0">no hay elementos !!</li>
-  <li *ngFor="let name of items; index as i">
-    {{name}} {{i}}
-    <button (click)="deleteItem(i)">delete</button>
-  </li>
-</ul>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 
 
 
-<div class="product-grid">
-  <app-product
-  *ngFor="let product of products"
-  (productClicked)="clickProduct($event)"
-  [product]="product">
-</app-product>
 
 
-</div>
+
 
