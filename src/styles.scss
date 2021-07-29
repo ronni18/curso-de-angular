@@ -10,18 +10,41 @@ body {
     display:grid;
     grid-template-columns: repeat(1, 1fr);
 }
-@media (min-width: 479px) {//smartphones
+/* @media (max-width: 479px) {//smartphones
     .product-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media (min-width: 767px) {//tablets medianas
+@media (max-width: 767px) {//tablets medianas
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 991px) {//tablets grandes
+@media (max-width: 991px) {//tablets grandes
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+} */
+@media screen and (max-width: 1442px) {
+    .product-grid {//productos de la grilla
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
+
+@media screen and (max-width: 1024px) {
+        .product-grid {//productos de la grilla
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+     
+    @media screen and (max-width: 768px) {
+        .product-grid {//productos de la grilla
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+     
+    @media screen and (max-width: 479px) {
+        .product-grid {//productos de la grilla
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
